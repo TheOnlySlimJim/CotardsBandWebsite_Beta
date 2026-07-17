@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+body {
+    padding:0%;
+    margin:0%;
+    background-color: black;
+}
+
+ul {
+    padding:0%;
+    margin:0%;
+}
+
+.navlinks {
+    font-family: "Big Shoulders Stencil", sans-serif;
+   background-color:black; 
+    color: greenyellow;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 15%;
+}
+
+li {
+    padding: 12px;
+    /*    border-bottom: 1px solid black; */
+}
+
+li:hover {
+    color: hotpink;
+    font-size: 1.4rem;
+}
+
+.imagebanner {
+    background-image: url("images/New\ Piskel\ \(2\)\ \(1\)\ \(1\)\ \(1\)\ \(1\).gif");
+    padding: 1px;
+    background-size: 450px;
+   /* background-size: cover; */
+    text-align: center;
+    color: greenyellow;
+    font-family: "New Rocker", sans-serif;
+    font-size: 3.5rem;
+    animation: pulse 1.5s infinite alternate; 
+    position: relative;
+}
+
+@keyframes pulse {
+  from {
+    text-shadow: 0 0 5px green, 0 0 10px greenyellow, 0 0 40px greenyellow;
+  }
+  to {
+    text-shadow: 0 0 10px green, 0 0 30px greenyellow, 0 0 100px greenyellow;
+  }
+}
+
+.introduction {
+    text-align: center;
+    font-family: "Stalinist One", sans-serif;
+    color: greenyellow;
+    animation: pulseText 4s infinite; 
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; 
+}
+
+@keyframes pulseText {
+  0%, 100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.ourmusic {
+  text-align: center;
+  color: hotpink;
+  font-family: "Stalinist One", sans-serif;
+  text-shadow: -3px -2px 0 rgb(158, 0, 79)
+
+}
+
+@media screen and (min-width: 700px) {
+  ul {
+    /*text-align: right;*/
+  }
+
+  li{
+    /*display: inline-block;
+    border-bottom: 0px;
+    border-left: 1px solid black;*/
+  }
+
+  .navlinks {
+    padding-top: 3%;
+  }
+
+  .music {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
